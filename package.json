@@ -1,0 +1,26 @@
+{
+  "name": "wup",
+  "description": "tiny webserver",
+  "author": "Paul Vorbach <paul@vorb.de> (http://vorb.de/)",
+  "tags": [ "http", "web", "deamon", "server", "www" ],
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pvorb/node-wup.git"
+  },
+  "bugs": {
+    "url": "https://github.com/pvorb/node-wup/issues"
+  },
+  "bin": {
+    "wup": "./wup.js"
+  },
+  "engines": {
+    "node": ">=0.4.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://vorb.de/license/mit.html"
+    }
+  ]
+}
