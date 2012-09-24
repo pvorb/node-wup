@@ -2,8 +2,14 @@
   "name": "wup",
   "description": "tiny webserver for fast tests",
   "author": "Paul Vorbach <paul@vorb.de> (http://vorb.de/)",
-  "tags": [ "http", "web", "deamon", "server", "www" ],
-  "version": "0.0.0",
+  "tags": [
+    "http",
+    "web",
+    "deamon",
+    "server",
+    "www"
+  ],
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/pvorb/node-wup.git"
