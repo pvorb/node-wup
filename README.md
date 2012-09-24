@@ -1,25 +1,22 @@
 # wup
 
-tiny webserver
+tiny webserver for fast, straightforward tests
 
-wup does only serve files in the current working directory. It only serves HTTP
-GET requests. There are no configuration files. The port used is always 8080.
+wup serves files in the current working directory only. It serves HTTP GET
+requests. No POST, no PUT, etc. There are no configuration files. The web server
+will always run at `http://localhost:8080/`.
 
 That's it.
 
 ## Installation
 
-```
-npm install -g wup
-```
+    npm install -g wup
 
 ## Usage
 
 On the command line enter
 
-```
-wup
-```
+    wup
 
 All files in the current working directory will become available at
 `http://localhost:8080/`.
@@ -27,6 +24,8 @@ All files in the current working directory will become available at
 ## License
 
 Copyright © 2012 Paul Vorbach
+
+(MIT License)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the “Software”), to deal in

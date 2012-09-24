@@ -3,6 +3,8 @@
 var http = require('http');
 var fs = require('fs');
 var path = require('path');
+var url = require('url');
+var filed = require('filed');
 
 var root = process.cwd();
 
@@ -26,13 +28,19 @@ var server = http.createServer(function (req, resp) {
     return resp.end();
   }
 
-  req.url = req.url.replace(/\/$/, '/index.html');
-  var file = path.resolve(root, '.'+req.url);
+  var reqPath = url.parse(req.url).pathname.replace(/\/$/, '/index.html');
+  var file = path.resolve(root, '.'+reqPath);
   var ext = path.extname(file);
 
-  fs.readFile(file, function (err, buf) {
+  fs.stat(file, function (err, stats) {
     if (err) {
-      console.error(err);
+      console.error(err.message);
+      resp.writeHead(404);
+      return resp.end();
+    }
+
+    if (!stats.isFile()) {
+      console.info('file "'+file+'" doesn\'t exist');
       resp.writeHead(404);
       return resp.end();
     }
@@ -43,9 +51,10 @@ var server = http.createServer(function (req, resp) {
     if (contentTypes[ext])
       resp.setHeader('Content-Type', contentTypes[ext]);
     else
-      resp.setHeader('Content-Type', 'text/plain');
+      resp.setHeader('Content-Type', 'application/octet-stream');
 
-    resp.end(buf);
+    // pipe file over http
+    filed(file).pipe(resp);
   });
 });
 

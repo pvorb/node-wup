@@ -1,0 +1,22 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'version',
+1 verbose cli   '0.1.0' ]
+2 info using npm@1.1.59
+3 info using node@v0.8.8
+4 error Error: Version not changed
+4 error     at c:\Program Files\nodejs\node_modules\npm\lib\version.js:58:45
+4 error     at fs.readFile (fs.js:176:14)
+4 error     at fs.close (c:\Program Files\nodejs\node_modules\npm\node_modules\graceful-fs\graceful-fs.js:92:5)
+4 error     at Object.oncomplete (fs.js:297:15)
+5 error If you need help, you may report this log at:
+5 error     <http://github.com/isaacs/npm/issues>
+5 error or email it to:
+5 error     <npm-@googlegroups.com>
+6 error System Windows_NT 6.1.7601
+7 error command "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "version" "0.1.0"
+8 error cwd c:\Dev\Web\wup
+9 error node -v v0.8.8
+10 error npm -v 1.1.59
+11 verbose exit [ 1, true ]
