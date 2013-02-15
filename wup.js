@@ -58,6 +58,12 @@ var server = http.createServer(function (req, resp) {
   });
 });
 
-server.listen(8080, '127.0.0.1');
+var arguments = process.argv.splice(2);
 
-console.log('Server running at http://localhost:8080/');
+if(arguments[0] === '-all' ){
+  server.listen(8080);
+  console.log('Server running at port 8080');
+}else{
+  server.listen(8080, '127.0.0.1');
+  console.log('Server running at http://localhost:8080/');
+}
