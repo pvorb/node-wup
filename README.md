@@ -16,10 +16,14 @@ That's it.
 
 On the command line enter
 
-    wup
+    wup [-all]
+
+Parameters:
+
+    -all : listen on all interfaces.
 
 All files in the current working directory will become available at
-`http://localhost:8080/`.
+`http://localhost:8080/` or `http://<ip>:8080/`.
 
 ## License
 
