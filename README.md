@@ -23,9 +23,9 @@ All files in the current working directory will become available at
 
 ## License
 
-Copyright © 2012 Paul Vorbach
-
 (MIT License)
+
+Copyright © 2012-2014 Paul Vorbach
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the “Software”), to deal in

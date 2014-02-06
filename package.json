@@ -1,11 +1,10 @@
 {
   "name": "wup",
-  "description": "tiny webserver for fast tests",
-  "author": "Paul Vorbach <paul@vorb.de> (http://vorb.de/)",
+  "description": "tiny webserver for testing",
+  "author": "Paul Vorbach <paul@vorba.ch> (http://paul.vorba.ch/)",
   "tags": [
     "http",
     "web",
-    "deamon",
     "server",
     "www"
   ],
@@ -21,17 +20,17 @@
     "wup": "./wup.js"
   },
   "engines": {
-    "node": ">= 0.4.0"
+    "node": ">=0.4.0"
   },
   "dependencies": {
-    "filed": "~ 0.0.7"
+    "st": "~0.2.5"
   },
   "devDependencies": {},
   "optionalDependencies": {},
   "licenses": [
     {
       "type": "MIT",
-      "url": "http://vorb.de/license/mit.html"
+      "url": "http://vorba.ch/license/mit.html"
     }
   ]
 }
